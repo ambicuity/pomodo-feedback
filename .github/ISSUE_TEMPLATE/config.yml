@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pomodo Maintainer Support
+    url: mailto:contact@riteshrana.engineer
+    about: Contact the repository maintainer directly.

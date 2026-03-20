@@ -1,0 +1,30 @@
+name: Update Contributors Hall of Fame
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '30 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  update-hof:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Regenerate contributors hall of fame
+        run: ./scripts/update-contributors-hof.sh
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: update contributors hall of fame'
+          file_pattern: CONTRIBUTORS.md
