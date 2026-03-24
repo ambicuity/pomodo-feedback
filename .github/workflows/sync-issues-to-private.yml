@@ -31,17 +31,25 @@ jobs:
         with:
           github-token: ${{ secrets.POMODO_SYNC_TOKEN }}
           script: |
-            const issue = context.payload.issue;
-            if (!issue) {
+            const payloadIssue = context.payload.issue;
+            if (!payloadIssue) {
               core.setFailed('No issue payload found.');
               return;
             }
 
-            const author = issue.user?.login || '';
-            if (issue.user?.type === 'Bot' || author.endsWith('[bot]')) {
+            const author = payloadIssue.user?.login || '';
+            if (payloadIssue.user?.type === 'Bot' || author.endsWith('[bot]')) {
               core.notice(`Skipping bot-authored issue by ${author}.`);
               return;
             }
+
+            // Fetch latest issue state/body to make reruns idempotent.
+            const current = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: payloadIssue.number
+            });
+            const issue = current.data;
 
             const sourceRepo = `${context.repo.owner}/${context.repo.repo}`;
             const body = issue.body || '';
