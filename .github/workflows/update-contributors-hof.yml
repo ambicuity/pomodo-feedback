@@ -1,10 +1,7 @@
-name: Update Contributors Hall of Fame
+name: Update Community Contributors
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
     - cron: '30 6 * * 1'
 
@@ -20,11 +17,19 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Regenerate contributors hall of fame
-        run: ./scripts/update-contributors-hof.sh
+      - name: Regenerate community contributors from issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_OWNER: ambicuity
+          SOURCE_REPO: pomodo-feedback
+          OUTPUT_FILE: CONTRIBUTORS.md
+          MAINTAINER_NAME: Ritesh Rana
+          MAINTAINER_EMAIL: contact@riteshrana.engineer
+          MAINTAINER_LOGINS: riteshr19
+        run: ./scripts/update-community-contributors.sh
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: update contributors hall of fame'
+          commit_message: 'chore: update community contributors'
           file_pattern: CONTRIBUTORS.md
