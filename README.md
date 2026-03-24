@@ -1,13 +1,50 @@
-# Pomodo: Time Manager (Feedback & Issues)
+# Pomodo: Time Manager (Feedback & Support)
 
-Welcome to the official issue tracker for **Pomodo: Time Manager**!
+Pomodo is a privacy-first focus timer and productivity companion for Chrome.
 
-Pomodo is a high-performance, privacy-first Pomodoro timer and focus manager built to help you block out distractions and achieve deep work.
+[Install from Chrome Web Store](https://chromewebstore.google.com/detail/pomodo-time-manager/igiohnhaahnhmlioghdcolbhhhfgnoek)
 
-Our source code is maintained privately, but we actively use this repository to listen to our users!
+## Quick Support
 
-## How to Contribute
-If you encounter a bug or have a suggestion for a new feature, please [open an issue](https://github.com/ambicuity/pomodo-feedback/issues/new/choose) using the provided templates. Be as descriptive as possible so we can improve Pomodo continuously!
+- Report a bug: [Open Bug Report](https://github.com/ambicuity/pomodo-feedback/issues/new?template=bug_report.yml)
+- Request a feature: [Open Feature Request](https://github.com/ambicuity/pomodo-feedback/issues/new?template=feature_request.yml)
+- Browse all issues: [Issues Board](https://github.com/ambicuity/pomodo-feedback/issues)
+- Privacy details: [Privacy Policy](PRIVACY.md)
 
-## Privacy Policy
-You can view our strict local-only Privacy Policy [here](PRIVACY.md). We believe your focus data belongs exclusively to you.
+## Screenshot Gallery
+
+![Focus Timer](assets/screenshots/focus.png)
+![History Stats](assets/screenshots/stats-1.png)
+![Settings](assets/screenshots/settings.png)
+
+## Media Kit
+
+- Icons: `assets/icons/`
+- Screenshots: `assets/screenshots/`
+- Promotional Tiles: `assets/promotional/`
+
+### Included Files
+
+- `assets/icons/icon-16.png`
+- `assets/icons/icon-48.png`
+- `assets/icons/icon-128.png`
+- `assets/icons/browser-action.png`
+- `assets/screenshots/focus.png`
+- `assets/screenshots/stats-1.png`
+- `assets/screenshots/stats-2.png`
+- `assets/screenshots/settings.png`
+- `assets/screenshots/menu.png`
+- `assets/screenshots/break.png`
+- `assets/promotional/tile-440x280.png`
+- `assets/promotional/tile-920x680.png`
+- `assets/promotional/tile-1400x560.png`
+
+## Public Documents
+
+- [Contributing Guide](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [Attributions](ATTRIBUTION.md)
+- [License](LICENSE.md)
+- [Contributors](CONTRIBUTORS.md)
+
+Maintainer: Ritesh Rana (`contact@riteshrana.engineer`)

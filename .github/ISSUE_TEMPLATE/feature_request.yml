@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest an improvement for Pomodo.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share your idea with enough context so we can evaluate and prioritize it.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What frustration, limitation, or unmet need are you facing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should Pomodo do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds or other approaches you have tried.
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Use case and impact
+      description: How would this improve your workflow or outcomes?
+    validations:
+      required: true
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or references
+      description: Optional links/images for UI or behavior examples.
+    validations:
+      required: false

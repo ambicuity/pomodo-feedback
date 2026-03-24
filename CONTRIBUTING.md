@@ -1,13 +1,30 @@
 # Contributing to Pomodo
 
-While the core source code for Pomodo is maintained privately, we actively welcome user feedback, feature requests, and bug reports!
+Thanks for helping improve Pomodo.
 
-## Providing Feedback
-If you encounter a bug or have a suggestion for a new feature:
-1. **Open an Issue:** Use the issue templates provided in the repository to submit your request or bug report.
-2. **Be Descriptive:** Provide as much detail as possible, including your OS, Chrome version, and exact steps to reproduce the issue.
+## Report Bugs
 
-## Beta Testing
-If you are interested in beta testing upcoming features, please open an issue requesting beta access, and we will follow up.
+Use the bug report form: <https://github.com/ambicuity/pomodo-feedback/issues/new?template=bug_report.yml>
 
-Thank you for helping make Pomodo the best focus timer on the market!
+Please include:
+
+- Reproduction steps
+- Expected vs actual behavior
+- OS and Chrome version
+- Extension version (from extension details)
+- Screenshot or screen recording when possible
+
+## Request Features
+
+Use the feature request form: <https://github.com/ambicuity/pomodo-feedback/issues/new?template=feature_request.yml>
+
+Please include:
+
+- Problem you want solved
+- Suggested solution
+- Alternatives considered
+- Real-world use case or workflow impact
+
+## Privacy and Security
+
+Pomodo stores data locally by design. If your issue may involve sensitive information, avoid posting private data publicly.
