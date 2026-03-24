@@ -48,3 +48,10 @@ Pomodo is a privacy-first focus timer and productivity companion for Chrome.
 - [Contributors](CONTRIBUTORS.md)
 
 Maintainer: Ritesh Rana (`contact@riteshrana.engineer`)
+
+## Ops Secrets
+
+Internal automation in this repository expects these Actions secrets:
+
+- `POMODO_SYNC_TOKEN`: cross-repo issue mirror and close sync with `ambicuity/pomodo`.
+- `COPILOT_GITHUB_TOKEN`: required by the `Daily Repo Status` workflow engine.
