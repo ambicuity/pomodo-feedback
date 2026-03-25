@@ -59,6 +59,6 @@ Internal automation in this repository expects these Actions secrets:
 
 ## CodeRabbit Config
 
-- This repository uses `.coderabbit.yaml` with linked repository context from `ambicuity/pomodo` so review decisions can validate against the source-of-truth codebase.
-- Ensure the CodeRabbit GitHub App has read access to both `ambicuity/pomodo-feedback` and private `ambicuity/pomodo`.
-- `knowledge_base.linked_repositories` is a CodeRabbit Pro feature.
+- Free OSS mode is enabled here for normal public-repo CodeRabbit reviews.
+- This config intentionally avoids `knowledge_base.linked_repositories` so it remains stable on free tier.
+- Cross-repository linked analysis with private `ambicuity/pomodo` requires CodeRabbit Pro.
