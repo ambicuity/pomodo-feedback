@@ -57,8 +57,8 @@ Internal automation in this repository expects these Actions secrets:
 - `COPILOT_GITHUB_TOKEN`: required by the `Daily Repo Status` workflow engine.
 
 
-## CodeRabbit Config
+## AI Review Policy
 
-- Free OSS mode is enabled here for normal public-repo CodeRabbit reviews.
-- This config intentionally avoids `knowledge_base.linked_repositories` so it remains stable on free tier.
-- Cross-repository linked analysis with private `ambicuity/pomodo` requires CodeRabbit Pro.
+- Gemini Code Assist is the default reviewer for normal PR guidance in this public feedback repository.
+- CodeRabbit is used as targeted backup when Gemini signals uncertainty or when changes affect higher-risk areas (workflows, templates, security-impact logic).
+- Free OSS mode is used here for CodeRabbit; linked private-repository analysis requires CodeRabbit Pro.
