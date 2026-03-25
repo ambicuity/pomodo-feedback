@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+
+reviews:
+  review_details: true
+  path_filters:
+    - "**"
+    - "!.git/**"
+    - "!.github/workflows/*.lock.yml"
+    - "!assets/**"
+    - "!**/*.png"
+    - "!**/*.jpg"
+    - "!**/*.jpeg"
+    - "!**/*.gif"
+    - "!**/*.webp"
+    - "!**/*.pdf"
+    - "!**/*.zip"
+    - "!**/*.lock"
+
+knowledge_base:
+  linked_repositories:
+    - repository: "ambicuity/pomodo"
+      instructions: |
+        Treat this repository as the source of truth for Pomodo product and code behavior.
+        Use it to validate user-reported issue reproducibility, expected UX/app behavior,
+        release/version consistency, and likely implementation impact for feedback changes.

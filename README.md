@@ -55,3 +55,10 @@ Internal automation in this repository expects these Actions secrets:
 
 - `POMODO_SYNC_TOKEN`: cross-repo issue mirror and close sync with `ambicuity/pomodo`.
 - `COPILOT_GITHUB_TOKEN`: required by the `Daily Repo Status` workflow engine.
+
+
+## CodeRabbit Config
+
+- This repository uses `.coderabbit.yaml` with linked repository context from `ambicuity/pomodo` so review decisions can validate against the source-of-truth codebase.
+- Ensure the CodeRabbit GitHub App has read access to both `ambicuity/pomodo-feedback` and private `ambicuity/pomodo`.
+- `knowledge_base.linked_repositories` is a CodeRabbit Pro feature.
