@@ -12,9 +12,12 @@ Describe what changed and why.
 For maintainer review or technical support, contact `contact@riteshrana.engineer`.
 
 
-## AI Review Route
+## Review Route Declaration (Required)
 
-- [ ] Gemini review requested
+- [ ] Gemini review requested (required)
 - [ ] CodeRabbit deep review needed
-Reason (required if CodeRabbit is selected):
+- [ ] CodeRabbit deep review not needed
 
+CodeRabbit reason/trigger (required when "CodeRabbit deep review needed" is selected):
+
+Risk category (optional; e.g., workflow, security, process-critical template, Gemini uncertainty):

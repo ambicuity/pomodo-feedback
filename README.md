@@ -59,6 +59,11 @@ Internal automation in this repository expects these Actions secrets:
 
 ## AI Review Policy
 
-- Gemini Code Assist is the default reviewer for normal PR guidance in this public feedback repository.
-- CodeRabbit is used as targeted backup when Gemini signals uncertainty or when changes affect higher-risk areas (workflows, templates, security-impact logic).
+- Gemini Code Assist is required as the first-line reviewer for all pull requests in this public feedback repository.
+- CodeRabbit is a controlled fallback and must be requested only when:
+  - Gemini review indicates uncertainty, ambiguity, or insufficient confidence, or
+  - The change impacts higher-risk areas such as workflows, security-sensitive changes, or process-critical templates/forms.
+- Any CodeRabbit invocation must be documented in the pull request using the Review Route Declaration, including the explicit trigger/reason.
+- `.coderabbit.yaml` remains active and intentionally configured as secondary support by policy (not disabled technically).
 - Free OSS mode is used here for CodeRabbit; linked private-repository analysis requires CodeRabbit Pro.
+- Policy consistency requirement: if this AI Review Policy is updated, the pull request template Review Route Declaration must be updated in the same pull request.
